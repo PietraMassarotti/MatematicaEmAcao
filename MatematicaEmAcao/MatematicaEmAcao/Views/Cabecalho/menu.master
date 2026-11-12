@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="menu.master.cs" Inherits="Views_Cabecalho_menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="~/css/menu.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header>
+            <h1>Matemática Em Ação!</h1>
+            <asp:Button ID="btnSair" class="botao" runat="server" Text="Sair" />
+        </header>
+
+    <div class="container">
+        <div class="menu">
+            <asp:Button ID="bntAtividades" class="botao" runat="server" Text="Atividades" />
+            <asp:Button ID="bntRanking" class="botao" runat="server" Text="Ranking" />
+            <asp:Button ID="btnConquistas" class="botao" runat="server" Text="Conquistas" />
+            <asp:Button ID="btnProgresso" class="botao" runat="server" Text="Meu Progresso" />
+            <asp:Button ID="btnPerfil" class="botao" runat="server" Text="Meu Perfil" />
+        </div>
+
+        <div class="paginas">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*Se não tem espaço na linha, há uma quebra de linha*/
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #101868;
+}
+
+header h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 15px 20px;
+    background-color: #5161bc;
+}
+
+.botao {
+    font-size: 16px;
+    width: 135px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
