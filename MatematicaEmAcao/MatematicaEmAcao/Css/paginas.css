@@ -1,0 +1,35 @@
+﻿.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buscarTopico {
+    display: flex;
+    gap: 10px;
+}
+
+.botao {
+    font-size: 16px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input {
+    width: 270px;
+    border: 1px solid black;
+}
+
+.tituloUm {
+    font-size: 42px;
+}
+
+.tituloDois {
+    font-size: 28px;
+}
+
+.amarelo{
+    background-color: #f7ba11;
+}

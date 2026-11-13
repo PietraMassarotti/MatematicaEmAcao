@@ -6,6 +6,7 @@
 
 html, body{
     height: 100%;
+    background-color: #e3ebf3
 }
 
 form {
@@ -13,7 +14,6 @@ form {
     flex-direction: column;
     min-height: 100%;
 }
-
 
 header {
     display: flex;
@@ -38,15 +38,21 @@ header h1{
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 20px;
     padding: 15px 20px;
     background-color: #5161bc;
 }
 
-.botao {
+.botaoMenu {
     font-size: 16px;
     width: 135px;
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+}
+
+.paginas {
+    flex: 1; 
+    min-width: 0; 
+    padding: 20px;
 }

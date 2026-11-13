@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|c:\\matematicaemacao\\matematicaemacao\\matematicaemacao\\views\\atividade\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|solutionrelative:matematicaemacao\\views\\atividade\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|c:\\matematicaemacao\\matematicaemacao\\matematicaemacao\\css\\paginas.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|solutionrelative:matematicaemacao\\css\\paginas.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|c:\\matematicaemacao\\matematicaemacao\\matematicaemacao\\css\\menu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|solutionrelative:matematicaemacao\\css\\menu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|c:\\matematicaemacao\\matematicaemacao\\matematicaemacao\\views\\cabecalho\\menu.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|solutionrelative:matematicaemacao\\views\\cabecalho\\menu.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|c:\\matematicaemacao\\matematicaemacao\\matematicaemacao\\views\\atividade\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|solutionrelative:matematicaemacao\\views\\atividade\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|c:\\matematicaemacao\\matematicaemacao\\matematicaemacao\\css\\catalogo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|solutionrelative:matematicaemacao\\css\\catalogo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,20 +34,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "menu.css",
-              "DocumentMoniker": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Css\\menu.css",
-              "RelativeDocumentMoniker": "MatematicaEmAcao\\Css\\menu.css",
-              "ToolTip": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Css\\menu.css",
-              "RelativeToolTip": "MatematicaEmAcao\\Css\\menu.css",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAAARAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "paginas.css",
+              "DocumentMoniker": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Css\\paginas.css",
+              "RelativeDocumentMoniker": "MatematicaEmAcao\\Css\\paginas.css",
+              "ToolTip": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Css\\paginas.css",
+              "RelativeToolTip": "MatematicaEmAcao\\Css\\paginas.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-12T01:46:19.146Z",
+              "WhenOpened": "2026-11-13T18:54:01.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "catalogo.css",
+              "DocumentMoniker": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Css\\catalogo.css",
+              "RelativeDocumentMoniker": "MatematicaEmAcao\\Css\\catalogo.css",
+              "ToolTip": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Css\\catalogo.css",
+              "RelativeToolTip": "MatematicaEmAcao\\Css\\catalogo.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-13T19:02:52.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "menu.css",
+              "DocumentMoniker": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Css\\menu.css",
+              "RelativeDocumentMoniker": "MatematicaEmAcao\\Css\\menu.css",
+              "ToolTip": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Css\\menu.css",
+              "RelativeToolTip": "MatematicaEmAcao\\Css\\menu.css",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-13T19:02:22.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "index.aspx",
               "DocumentMoniker": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Atividade\\index.aspx",
               "RelativeDocumentMoniker": "MatematicaEmAcao\\Views\\Atividade\\index.aspx",
@@ -51,20 +81,7 @@
               "RelativeToolTip": "MatematicaEmAcao\\Views\\Atividade\\index.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-11-12T02:09:19.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "menu.master",
-              "DocumentMoniker": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Cabecalho\\menu.master",
-              "RelativeDocumentMoniker": "MatematicaEmAcao\\Views\\Cabecalho\\menu.master",
-              "ToolTip": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Cabecalho\\menu.master",
-              "RelativeToolTip": "MatematicaEmAcao\\Views\\Cabecalho\\menu.master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-11-12T01:02:12.623Z",
+              "WhenOpened": "2026-11-13T18:59:51.366Z",
               "EditorCaption": ""
             }
           ]
