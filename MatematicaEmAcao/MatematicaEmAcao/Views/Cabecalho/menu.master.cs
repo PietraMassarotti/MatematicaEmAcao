@@ -19,4 +19,14 @@ public partial class Views_Cabecalho_menu : System.Web.UI.MasterPage
         Session.Clear();
         Response.Redirect("~/Views/Aluno/login.aspx");
     }
+
+    protected void bntAtividades_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Views/Atividade/index.aspx");
+    }
+
+    protected void bntRanking_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Views/Atividade/ranking.aspx");
+    }
 }

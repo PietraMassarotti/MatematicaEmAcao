@@ -22,8 +22,8 @@
 
     <div class="container">
         <div class="menu">
-            <asp:Button ID="bntAtividades" class="botaoMenu" runat="server" Text="Atividades" />
-            <asp:Button ID="bntRanking" class="botaoMenu" runat="server" Text="Ranking" />
+            <asp:Button ID="bntAtividades" class="botaoMenu" runat="server" Text="Atividades" OnClick="bntAtividades_Click" />
+            <asp:Button ID="bntRanking" class="botaoMenu" runat="server" Text="Ranking" OnClick="bntRanking_Click" />
             <asp:Button ID="btnConquistas" class="botaoMenu" runat="server" Text="Conquistas" />
             <asp:Button ID="btnProgresso" class="botaoMenu" runat="server" Text="Meu Progresso" />
             <asp:Button ID="btnPerfil" class="botaoMenu" runat="server" Text="Meu Perfil" />
