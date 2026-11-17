@@ -17,7 +17,7 @@
 
         <header>
             <h1>Matemática Em Ação!</h1>
-            <asp:Button ID="btnSair" class="botao" runat="server" Text="Sair" />
+            <asp:Button ID="btnSair" class="botao" runat="server" Text="Sair" OnClick="btnSair_Click" />
         </header>
 
     <div class="container">

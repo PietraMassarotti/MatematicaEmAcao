@@ -11,4 +11,12 @@ public partial class Views_Cabecalho_menu : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void btnSair_Click(object sender, EventArgs e)
+    {
+        //abandona e sai da sessão
+        Session.Abandon();
+        Session.Clear();
+        Response.Redirect("~/Views/Aluno/login.aspx");
+    }
 }
