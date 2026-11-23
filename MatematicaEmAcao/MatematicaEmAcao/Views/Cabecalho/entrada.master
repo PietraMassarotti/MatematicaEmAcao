@@ -5,13 +5,18 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Matemática Em Ação!</title>
+    <link rel="stylesheet" type="text/css" href="~/css/entrada.css" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
+
+        <h1>Matemática Em Ação!</h1>
+        <p>A plataforma pensada para você práticar exercícios de matemática de uma forma divertida :)</p>
+
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>

@@ -10,9 +10,15 @@
 <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
 
 <p>Senha</p>
-<asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
+<asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
+
+<br />
+<br />
 
 <asp:Button runat="server" ID="btnLogin" Text="Entrar" OnClick="btnLogin_Click" />
+
+<br />
+<br />
 
 <asp:Label runat="server" ID="lblMsg" Text="Label" Visible="false"></asp:Label>
 

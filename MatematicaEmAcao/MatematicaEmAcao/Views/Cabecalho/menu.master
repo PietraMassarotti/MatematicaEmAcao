@@ -5,9 +5,8 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Matemática Em Ação!</title>
     <link rel="stylesheet" type="text/css" href="~/css/menu.css" />
-    <link rel="stylesheet" type="text/css" href="~/css/catalogo.css" />
     <link rel="stylesheet" type="text/css" href="~/css/paginas.css" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -24,9 +23,9 @@
         <div class="menu">
             <asp:Button ID="bntAtividades" class="botaoMenu" runat="server" Text="Atividades" OnClick="bntAtividades_Click" />
             <asp:Button ID="bntRanking" class="botaoMenu" runat="server" Text="Ranking" OnClick="bntRanking_Click" />
-            <asp:Button ID="btnConquistas" class="botaoMenu" runat="server" Text="Conquistas" />
-            <asp:Button ID="btnProgresso" class="botaoMenu" runat="server" Text="Meu Progresso" />
-            <asp:Button ID="btnPerfil" class="botaoMenu" runat="server" Text="Meu Perfil" />
+            <asp:Button ID="btnConquistas" class="botaoMenu" runat="server" Text="Conquistas" OnClick="btnConquistas_Click" />
+            <asp:Button ID="btnProgresso" class="botaoMenu" runat="server" Text="Meu Progresso" OnClick="btnProgresso_Click" />
+            <asp:Button ID="btnPerfil" class="botaoMenu" runat="server" Text="Meu Perfil" OnClick="btnPerfil_Click" />
         </div>
 
         <div class="paginas">

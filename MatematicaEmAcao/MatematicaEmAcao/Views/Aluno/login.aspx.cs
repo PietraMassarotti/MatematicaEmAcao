@@ -29,20 +29,12 @@ public partial class Views_Aluno_login : System.Web.UI.Page
         string email = txtEmail.Text;
         string senha = txtSenha.Text;
 
-        //Validação de campos obrigatórios
-        if (email == "")
+        if (email == "" || senha == "")
         {
             contaErro++;
-            msg += "Campo 'E-mail' deve ser preenchido! <br>";
+            msg += "Por Favor preencha todos os campos!";
         }
 
-        if (senha == "")
-        {
-            contaErro++;
-            msg += "Campo 'Senha' deve ser preenchido! <br>";
-        }
-
-        // Se os campos estão vazios não procura no banco
         if (contaErro > 0)
         {
             lblMsg.Text = msg;
@@ -60,28 +52,18 @@ public partial class Views_Aluno_login : System.Web.UI.Page
             conn.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-
-            //  cmd.ExecuteNonQuery(); // ISSO aqui usa para oque não faz select, por exemplo INSERT, DELETE UPDATE
-            //  cmd.ExecuteReader(); ou  cmd.ExecuteScalar(); // isso para query
             cmd.CommandText = "SELECT cod_usuario, senha FROM tbl_usuarios WHERE email = @email AND tipo_usuario = 'A'";
-            // Evita SQL injection, o nome é Binding SQL;
             cmd.Parameters.AddWithValue("@email", email);
-            //resultado do select dentro de reader
-            //objeto responsável por ler, linha por linha, o resultado de uma consulta SQL feita ao banco de dados.
             SqlDataReader reader = cmd.ExecuteReader();
 
-            // Usa if porque o retorno é sempre um único cliente não vários
             if (reader.Read())
             {
-                // Pega e guarda o codCliente correspondente ao e-mail
                 codUsuario = Convert.ToString(reader["cod_usuario"]);
-                // Pega e guarda a senha correspondente ao e-mail
                 senhaAtual = Convert.ToString(reader["senha"]);
             }
 
             conn.Close();
 
-            // Se cliente ainda for null, então o e-mail não existe no banco
             if (codUsuario == null)
             {
                 contaErro++;
@@ -104,7 +86,6 @@ public partial class Views_Aluno_login : System.Web.UI.Page
             }
             else
             {
-                // Se tudo der certo inicia sessão com o código do cliente
                 Session["cod_usuario"] = codUsuario;
                 Session["tipo_usuario"] = 'A';
                 Response.Redirect("~/Views/Atividade/index.aspx");

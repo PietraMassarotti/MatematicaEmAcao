@@ -33,3 +33,57 @@
 .amarelo{
     background-color: #f7ba11;
 }
+
+.opcao {
+    padding: 8px 16px;
+    margin: 4px;
+    border: 2px solid #999;
+    background-color: #fff;
+}
+
+.selecionado {
+    background-color: #101868;
+    border-color: #101868;
+    color: #fff;
+}
+
+.conquistaObtida {
+    background-color: #c8e6c9;
+    border: 2px solid #388e3c;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.conquistaPendente {
+    background-color: #ffcdd2;
+    border: 2px solid #d32f2f;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.catalogoGrid {
+    display: grid;
+    /*cria um layout em grade (grid) totalmente responsivo e adaptável de forma automática*/
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 24px;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 18px 8px;
+    text-align: center;
+}
+
+    .card a {
+        display: block;
+        text-decoration: none;
+    }
+
+.cardNome {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    margin: 8px 0 4px;
+}

@@ -18,6 +18,12 @@ public partial class Views_Atividade_atividadeTopico : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["cod_usuario"] == null)
+        {
+            Response.Redirect("~/Views/Aluno/login.aspx");
+            return;
+        }
+
         int cod_topico;
         if (!int.TryParse(Request.QueryString["id"], out cod_topico))
         {
@@ -29,6 +35,26 @@ public partial class Views_Atividade_atividadeTopico : System.Web.UI.Page
         {
             CarregarAtividades(cod_topico, "");
         }
+
+        string strConexao = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        SqlConnection conn = new SqlConnection();
+        conn.ConnectionString = strConexao.ToString();
+        conn.Open();
+        SqlCommand cmd = new SqlCommand();
+        cmd.Connection = conn;
+
+        cmd.CommandText = "SELECT nome  FROM tbl_topicos WHERE cod_topico LIKE @filtro;";
+        cmd.Parameters.AddWithValue("@filtro", cod_topico);
+        SqlDataReader reader = cmd.ExecuteReader();
+
+        DataTable tabela = new DataTable();
+        tabela.Load(reader);
+
+        DataRow linha = tabela.Rows[0];
+        lblNomeTopico.Text = linha["nome"].ToString();
+
+        conn.Close();
+
     }
 
     protected void btnBuscar_Click(object sender, EventArgs e)
@@ -55,9 +81,7 @@ public partial class Views_Atividade_atividadeTopico : System.Web.UI.Page
 
             cmd.CommandText = "SELECT cod_atividade, titulo, tipo_atividade, cod_dificuldade FROM tbl_atividades WHERE cod_topico = @cod_topico AND (titulo LIKE @busca OR CAST(cod_atividade AS NVARCHAR(10)) = @codBusca)";
             cmd.Parameters.AddWithValue("@cod_topico", cod_topico);
-            // "contém": digitar "soma" encontra "Somando pequenos números"
             cmd.Parameters.AddWithValue("@busca", "%" + busca + "%");
-            // comparação exata com o código
             cmd.Parameters.AddWithValue("@codBusca", busca);
 
             conn.Open();
@@ -87,7 +111,7 @@ public partial class Views_Atividade_atividadeTopico : System.Web.UI.Page
             lblTitulo.Text = linha["titulo"].ToString();
             lblTipo.Text = linha["tipo_atividade"].ToString();
             lblDificuldade.Text = linha["cod_dificuldade"].ToString();
-            //lnkAtividade.NavigateUrl = "~/Views/Atividade/atividade.aspx?id=" + cod_atividade;
+            lnkAtividade.NavigateUrl = "~/Views/Atividade/atividade.aspx?id=" + cod_atividade;
         }
 
         lblSemResultado.Visible = (tabela.Rows.Count == 0);

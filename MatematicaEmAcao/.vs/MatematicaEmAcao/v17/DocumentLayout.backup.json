@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|c:\\matematicaemacao\\matematicaemacao\\matematicaemacao\\views\\aluno\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|solutionrelative:matematicaemacao\\views\\aluno\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|c:\\matematicaemacao\\matematicaemacao\\matematicaemacao\\views\\atividade\\ranking.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|solutionrelative:matematicaemacao\\views\\atividade\\ranking.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|c:\\matematicaemacao\\matematicaemacao\\matematicaemacao\\views\\atividade\\ranking.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|solutionrelative:matematicaemacao\\views\\atividade\\ranking.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|c:\\matematicaemacao\\matematicaemacao\\matematicaemacao\\views\\aluno\\cadastro.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EAFA7672-79F1-84EB-CACE-F81E34A451AE}|C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao|solutionrelative:matematicaemacao\\views\\aluno\\cadastro.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,50 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ranking.aspx.cs",
-              "DocumentMoniker": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Atividade\\ranking.aspx.cs",
-              "RelativeDocumentMoniker": "MatematicaEmAcao\\Views\\Atividade\\ranking.aspx.cs",
-              "ToolTip": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Atividade\\ranking.aspx.cs",
-              "RelativeToolTip": "MatematicaEmAcao\\Views\\Atividade\\ranking.aspx.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwDAAAABFAQAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T02:31:00.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ranking.aspx",
-              "DocumentMoniker": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Atividade\\ranking.aspx",
-              "RelativeDocumentMoniker": "MatematicaEmAcao\\Views\\Atividade\\ranking.aspx",
-              "ToolTip": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Atividade\\ranking.aspx",
-              "RelativeToolTip": "MatematicaEmAcao\\Views\\Atividade\\ranking.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-11-17T02:07:08.883Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "login.aspx",
-              "DocumentMoniker": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Aluno\\login.aspx",
-              "RelativeDocumentMoniker": "MatematicaEmAcao\\Views\\Aluno\\login.aspx",
-              "ToolTip": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Aluno\\login.aspx",
-              "RelativeToolTip": "MatematicaEmAcao\\Views\\Aluno\\login.aspx",
+              "Title": "cadastro.aspx",
+              "DocumentMoniker": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Aluno\\cadastro.aspx",
+              "RelativeDocumentMoniker": "MatematicaEmAcao\\Views\\Aluno\\cadastro.aspx",
+              "ToolTip": "C:\\MatematicaEmAcao\\MatematicaEmAcao\\MatematicaEmAcao\\Views\\Aluno\\cadastro.aspx",
+              "RelativeToolTip": "MatematicaEmAcao\\Views\\Aluno\\cadastro.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-11-17T02:04:34.695Z",
+              "WhenOpened": "2026-11-23T03:16:21.392Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }

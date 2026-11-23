@@ -13,7 +13,10 @@
     <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
 
     <p>Senha</p>
-    <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
+
+    <br />
+    <br />
 
     <asp:Button runat="server" ID="btnCadastro" Text="Cadastrar-se" OnClick="btnCadastro_Click" />
 

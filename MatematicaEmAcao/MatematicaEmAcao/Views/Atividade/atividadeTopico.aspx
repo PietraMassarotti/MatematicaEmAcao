@@ -6,6 +6,8 @@
 
      <asp:Button ID="btnVoltar" runat="server" Text="Voltar" OnClick="btnVoltar_Click"/>
 
+    <asp:Label ID="lblNomeTopico" runat="server" Text="Label"></asp:Label>
+
     <h2>Buscar uma atividade dentro do tópico</h2>
 
     <div class="buscarAtividade">

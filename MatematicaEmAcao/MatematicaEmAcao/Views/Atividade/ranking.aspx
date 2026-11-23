@@ -7,7 +7,7 @@
     <h1>Ranking</h1>
 
     <asp:DropDownList ID="ddlBusca" runat="server">
-        <asp:ListItem Value="1" Text="Ranking do meu nível" Selected="True"></asp:ListItem>
+        <asp:ListItem Value="1" Text="Ranking do meu Nível" Selected="True"></asp:ListItem>
         <asp:ListItem Value="2" Text="Ranking Geral"></asp:ListItem>
     </asp:DropDownList>
 
