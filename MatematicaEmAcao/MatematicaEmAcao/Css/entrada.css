@@ -67,8 +67,7 @@ header {
         margin-bottom: 6px;
     }
 
-    .form input[type="text"],
-    .form input[type="password"] {
+    .input {
         width: 100%;
         box-sizing: border-box; 
         padding: 10px;

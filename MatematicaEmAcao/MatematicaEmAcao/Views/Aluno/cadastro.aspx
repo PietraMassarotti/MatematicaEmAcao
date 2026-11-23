@@ -8,13 +8,13 @@
     <h2>Formulário de Cadastro</h2>
 
     <p>Nome:</p>
-    <asp:TextBox ID="txtNome" runat="server" class="cinza"></asp:TextBox>
+    <asp:TextBox ID="txtNome" runat="server" class="input cinza"></asp:TextBox>
 
     <p>E-mail:</p>
-    <asp:TextBox ID="txtEmail" runat="server" class="cinza"></asp:TextBox>
+    <asp:TextBox ID="txtEmail" runat="server" class="input cinza"></asp:TextBox>
 
     <p>Senha</p>
-    <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" class="cinza"></asp:TextBox>
+    <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" class="input cinza"></asp:TextBox>
 
     <br />
     <br />

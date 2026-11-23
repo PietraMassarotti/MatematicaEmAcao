@@ -64,12 +64,12 @@ public partial class Views_Aluno_conquistas : System.Web.UI.Page
             {
                 DateTime data = Convert.ToDateTime(linha["data_ganha"]);
                 lblDataObtido.Text = "Obtida em " + data.ToString("dd/MM/yyyy");
-                pnlConquista.CssClass = "conquistaObtida";
+                pnlConquista.CssClass = "conquista obtida";
             }
             else
             {
                 lblDataObtido.Text = "Ainda não obtida";
-                pnlConquista.CssClass = "conquistaPendente";
+                pnlConquista.CssClass = "conquista pendente";
             }
         }
     }

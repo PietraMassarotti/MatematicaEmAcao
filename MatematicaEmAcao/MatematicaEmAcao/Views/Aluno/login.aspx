@@ -8,10 +8,10 @@
     <h2>Formulário de Login</h2>
 
     <p>E-mail:</p>
-    <asp:TextBox ID="txtEmail" runat="server" class="cinza"></asp:TextBox>
+    <asp:TextBox ID="txtEmail" runat="server" class="input cinza"></asp:TextBox>
 
     <p>Senha</p>
-    <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" class="cinza"></asp:TextBox>
+    <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" class="input cinza"></asp:TextBox>
 
     <br />
     <br />
