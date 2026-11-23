@@ -1,4 +1,20 @@
-﻿* {
+﻿/*Cores:
+    Azul: #5161bc
+    Azul Escuro: #101868
+    Amarelo: #f7ba11
+    Azul/cinza claro: #e3ebf3
+
+*/
+
+.amarelo {
+    background-color: #f7ba11;
+}
+
+.azulEscuro {
+    background-color: #101868;
+}
+
+* {
     margin: 0;
     border: 0;
     padding: 0;

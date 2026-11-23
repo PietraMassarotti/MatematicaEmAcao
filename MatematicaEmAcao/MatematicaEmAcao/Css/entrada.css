@@ -1,1 +1,95 @@
-﻿
+﻿/*Cores:
+    Azul: #5161bc
+    Azul Escuro: #101868
+    Amarelo: #f7ba11
+    Azul/cinza claro: #e3ebf3
+
+*/
+
+.cinza {
+    background-color: #e3ebf3;
+}
+
+.amarelo {
+    background-color: #f7ba11;
+    color: #000;
+}
+
+.azulEscuro {
+    background-color: #101868;
+    color: #fff;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px
+}
+
+body {
+    background-color: #e3ebf3;
+}
+
+header {
+    background-color: #101868;
+    padding: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    header p {
+        font-size: 25px;
+    }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    margin: 40px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+    .form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form p {
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    .form input[type="text"],
+    .form input[type="password"] {
+        width: 100%;
+        box-sizing: border-box; 
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #000;
+        border-radius: 5px;
+    }
+
+.botao {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form span {
+    display: block;
+    color: #c62828;
+    text-align: center;
+    margin-bottom: 10px;
+}
