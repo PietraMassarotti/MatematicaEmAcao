@@ -4,27 +4,55 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <h1>Ranking</h1>
+    <p class="tituloUm">Ranking</p>
 
-    <asp:DropDownList ID="ddlBusca" runat="server">
-        <asp:ListItem Value="1" Text="Ranking do meu Nível" Selected="True"></asp:ListItem>
-        <asp:ListItem Value="2" Text="Ranking Geral"></asp:ListItem>
-    </asp:DropDownList>
+    <br />
 
-    <asp:Button ID="btnMostrar" runat="server" Text="Mostrar" OnClick="btnMostrar_Click" />
+    <div class="buscar">
+        <asp:DropDownList ID="ddlBusca" runat="server" class="input">
+            <asp:ListItem Value="1" Text="Ranking do meu Nível" Selected="True"></asp:ListItem>
+            <asp:ListItem Value="2" Text="Ranking Geral"></asp:ListItem>
+        </asp:DropDownList>
 
-    <h3><asp:Label ID="lblTitulo" runat="server"></asp:Label></h3>
+        <asp:Button ID="btnMostrar" runat="server" Text="Mostrar" OnClick="btnMostrar_Click" class="botao amarelo"/>
+    </div>
+
+    <br />
+
+    <p><asp:Label ID="lblTitulo" runat="server" class="tituloDois"></asp:Label></p>
+
+    <br />
 
     <asp:Repeater ID="rptRanking" runat="server">
-        <ItemTemplate>
-            <div>
-                <asp:Label ID="lblPosicao" runat="server"></asp:Label>
-                <asp:Label ID="lblNome" runat="server"></asp:Label>
-                <asp:Label ID="lblNivel" runat="server"></asp:Label>
-                <asp:Label ID="lblXp" runat="server"></asp:Label>
-            </div>
-        </ItemTemplate>
-    </asp:Repeater>
+
+    <HeaderTemplate>
+        <table class="tabela">
+            <thead>
+                <tr class="azulEscuro">
+                    <th>Posição</th>
+                    <th>Aluno</th>
+                    <th>Nível</th>
+                    <th>XP</th>
+                </tr>
+            </thead>
+            <tbody>
+    </HeaderTemplate>
+
+    <ItemTemplate>
+        <tr>
+            <td><asp:Label ID="lblPosicao" runat="server"></asp:Label></td>
+            <td><asp:Label ID="lblNome" runat="server"></asp:Label></td>
+            <td><asp:Label ID="lblNivel" runat="server"></asp:Label></td>
+            <td><asp:Label ID="lblXp" runat="server"></asp:Label></td>
+        </tr>
+    </ItemTemplate>
+
+    <FooterTemplate>
+            </tbody>
+        </table>
+    </FooterTemplate>
+
+</asp:Repeater>
 
     <asp:Label ID="lblSemResultado" runat="server" Visible="false" Text="Nenhum aluno encontrado no ranking."></asp:Label>
 

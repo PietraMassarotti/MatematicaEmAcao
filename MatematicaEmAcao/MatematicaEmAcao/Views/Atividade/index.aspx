@@ -11,7 +11,7 @@
 
             <br />
 
-            <div class="buscarTopico">
+            <div class="buscar">
                 <asp:TextBox ID="txtTopico" runat="server" class="input"></asp:TextBox>
                 <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="botao amarelo"/>
             </div>
