@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -26,6 +27,8 @@ public partial class Views_Aluno_verPerfil : System.Web.UI.Page
 
     private void CarregarPerfil()
     {
+        lblMsg.Text = "";
+
         int cod_usuario = Convert.ToInt32(Session["cod_usuario"]);
 
         string strConexao = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
@@ -70,7 +73,8 @@ public partial class Views_Aluno_verPerfil : System.Web.UI.Page
 
         if (nome == "" || email == "" || senha == "")
         {
-            lblMsg.Text = "Por favor preencha todos os campos..";
+            lblMsg.Text = "Por favor preencha todos os campos!";
+            lblMsg.ForeColor = Color.IndianRed;
             lblMsg.Visible = true;
             return;
         }
@@ -91,6 +95,7 @@ public partial class Views_Aluno_verPerfil : System.Web.UI.Page
         {
             conn.Close();
             lblMsg.Text = "Erro: e-mail inválido.";
+            lblMsg.ForeColor = Color.IndianRed;
             lblMsg.Visible = true;
             return;
         }
@@ -106,6 +111,7 @@ public partial class Views_Aluno_verPerfil : System.Web.UI.Page
         conn.Close();
 
         lblMsg.Text = "Perfil atualizado com sucesso!";
+        lblMsg.ForeColor = Color.DarkOliveGreen;
         lblMsg.Visible = true;
     }
 

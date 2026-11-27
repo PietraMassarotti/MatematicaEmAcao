@@ -15,7 +15,7 @@
     <div>
        <header>
             <h1>Matemática Em Ação!</h1>
-            <p>A plataforma pensada para você práticar exercícios de matemática de uma forma divertida :)</p>
+            <p>O site pensado para te auxiliar nos estudos :)</p>
        </header>
 
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">

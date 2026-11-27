@@ -93,7 +93,7 @@ public partial class Views_Atividade_atividade : System.Web.UI.Page
 
             if (linha["dica"] != DBNull.Value)
             {
-                lblDica.Text = linha["dica"].ToString();
+                lblDica.Text = "Dica: " + linha["dica"].ToString();
             }
             else
             {
@@ -108,9 +108,9 @@ public partial class Views_Atividade_atividade : System.Web.UI.Page
             {
                 item.FindControl("pnlVerdFalso").Visible = true;
             }
-            else if (tipo == "Quiz")
+            else if (tipo == "Múltipla Escolha")
             {
-                item.FindControl("pnlQuiz").Visible = true;
+                item.FindControl("pnlMultiplaE").Visible = true;
 
                 string[] partes = linha["resposta"].ToString().Split(';');
 
@@ -200,7 +200,7 @@ public partial class Views_Atividade_atividade : System.Web.UI.Page
             }
 
             bool acertou;
-            if (tipo == "Quiz")
+            if (tipo == "Múltipla Escolha")
             {
                 if(respostaAluno == respostaCerta.Split(';')[0])
                 {
@@ -255,6 +255,7 @@ public partial class Views_Atividade_atividade : System.Web.UI.Page
         lblMsg.Visible = true;
         lblAcertos.Visible = true;
         lblPontos.Visible = true;
+        pnlResultado.Visible = true;
 
         btnEnviar.Enabled = false;
     }

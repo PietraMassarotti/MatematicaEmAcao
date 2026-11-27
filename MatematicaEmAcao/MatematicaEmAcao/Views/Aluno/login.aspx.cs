@@ -25,18 +25,12 @@ public partial class Views_Aluno_login : System.Web.UI.Page
     protected void btnLogin_Click(object sender, EventArgs e)
     {
         string msg = "";
-        int contaErro = 0;
         string email = txtEmail.Text;
         string senha = txtSenha.Text;
 
         if (email == "" || senha == "")
         {
-            contaErro++;
             msg += "Por Favor preencha todos os campos!";
-        }
-
-        if (contaErro > 0)
-        {
             lblMsg.Text = msg;
             lblMsg.ForeColor = Color.IndianRed;
             lblMsg.Visible = true;
@@ -63,6 +57,8 @@ public partial class Views_Aluno_login : System.Web.UI.Page
             }
 
             conn.Close();
+
+            int contaErro = 0;
 
             if (codUsuario == null)
             {

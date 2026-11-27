@@ -78,7 +78,7 @@ public partial class Views_Atividade_ranking : System.Web.UI.Page
 
         if (filtro == "1" && tabela.Rows.Count > 0)
         {
-            lblTitulo.Text = "Ranking do nível: " + tabela.Rows[0]["nivel"].ToString();
+            lblTitulo.Text = "Ranking do nível " + tabela.Rows[0]["nivel"].ToString();
         }
         else
         {

@@ -1,65 +1,102 @@
 ﻿/*Cores:
-    Azul: #5161bc
-    Azul Escuro: #101868
-    Amarelo: #f7ba11
-    Azul/cinza claro: #e3ebf3
-
+    Cinza: #E8EFF4
+    Azul Escuro: #3B5386
+    Azul: #63A1F3
+    Amarelo: #F3BA00
+    Amarelo Claro: #FFE799
+    Laranja Escuro: #B35210
 */
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
+
+.fundoBranco {
+    background-color: #fff;
 }
 
-html, body{
+.fundoCinza {
+    background-color: #E8EFF4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
     height: 100%;
-    background-color: #e3ebf3
+    background-color: #E8EFF4;
+    font-family: Inter, Arial, sans-serif;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    height: 100%;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*Se não tem espaço na linha, há uma quebra de linha*/
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #101868;
+    padding: 20px 30px;
+    background-color: #3B5386;
+    color: #fff;
 }
 
-header h1{
-    color: #fff;
-    font-size: 35px;
-}
+    header h1 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    header .botao {
+        width: 190px;
+        padding: 8px;
+        font-family: inherit;
+        font-size: 24px;
+        background-color: #fff;
+        color: #000;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
 .container {
     display: flex;
     flex: 1;
+    min-height: 0;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 15px 20px;
-    background-color: #5161bc;
+    width: 220px;
+    padding: 15px 10px;
+    background-color: #63A1F3;
 }
 
 .botaoMenu {
-    font-size: 16px;
-    width: 135px;
-    border: 2px solid black;
+    width: 100%;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 24px;
+    background-color: #fff;
+    color: #000;
+    border: 0;
     border-radius: 5px;
-    padding: 5px;
 }
 
+    .botaoMenu:last-child {
+        margin-top: auto;
+    }
+
 .paginas {
-    flex: 1; 
-    min-width: 0; 
+    flex: 1;
+    min-width: 0;
+    overflow-y: auto;
+}
+
+.pagina {
+    min-height: 100%;
     padding: 20px;
 }

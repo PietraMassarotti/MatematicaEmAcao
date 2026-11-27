@@ -94,7 +94,7 @@ public partial class Views_Aluno_dashboard : System.Web.UI.Page
 
             int qtd = Convert.ToInt32(linha["qtd"]);
 
-            lblTopico.Text = linha["nome"].ToString() + ": ";
+            lblTopico.Text = linha["nome"].ToString();
             lblQtdTopico.Text = qtd.ToString();
 
             total += qtd;
@@ -113,7 +113,7 @@ public partial class Views_Aluno_dashboard : System.Web.UI.Page
             Label lblDificuldade = (Label)item.FindControl("lblDificuldade");
             Label lblQtdDificuldade = (Label)item.FindControl("lblQtdDificuldade");
 
-            lblDificuldade.Text = linha["nome"].ToString() + ": ";
+            lblDificuldade.Text = linha["nome"].ToString();
             lblQtdDificuldade.Text = linha["qtd"].ToString();
         }
     }

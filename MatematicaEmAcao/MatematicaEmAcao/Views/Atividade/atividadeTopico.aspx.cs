@@ -79,7 +79,7 @@ public partial class Views_Atividade_atividadeTopico : System.Web.UI.Page
         {
             cmd.Connection = conn;
 
-            cmd.CommandText = "SELECT cod_atividade, titulo, tipo_atividade, cod_dificuldade FROM tbl_atividades WHERE cod_topico = @cod_topico AND (titulo LIKE @busca OR CAST(cod_atividade AS NVARCHAR(10)) = @codBusca)";
+            cmd.CommandText = "SELECT a.cod_atividade, a.titulo, a.tipo_atividade, d.nome AS dificuldade FROM tbl_atividades a INNER JOIN tbl_dificuldades d ON d.cod_dificuldade = a.cod_dificuldade WHERE cod_topico = @cod_topico AND (titulo LIKE @busca OR CAST(cod_atividade AS NVARCHAR(10)) = @codBusca)";
             cmd.Parameters.AddWithValue("@cod_topico", cod_topico);
             cmd.Parameters.AddWithValue("@busca", "%" + busca + "%");
             cmd.Parameters.AddWithValue("@codBusca", busca);
@@ -110,7 +110,7 @@ public partial class Views_Atividade_atividadeTopico : System.Web.UI.Page
             lblCod.Text = linha["cod_atividade"].ToString();
             lblTitulo.Text = linha["titulo"].ToString();
             lblTipo.Text = linha["tipo_atividade"].ToString();
-            lblDificuldade.Text = linha["cod_dificuldade"].ToString();
+            lblDificuldade.Text = linha["dificuldade"].ToString();
             lnkAtividade.NavigateUrl = "~/Views/Atividade/atividade.aspx?id=" + cod_atividade;
         }
 

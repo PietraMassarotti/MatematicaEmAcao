@@ -5,36 +5,33 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-        <div class="center">
+<div class="pagina fundoCinza">
 
-            <p class="tituloDois" >Não encontrou o Tópico? Pesquise aqui!</p>
+    <div class="center">
+        <p class="tituloDois">Não encontrou o tópico? Pesquise aqui.</p>
 
-            <br />
-
-            <div class="buscar">
-                <asp:TextBox ID="txtTopico" runat="server" class="input"></asp:TextBox>
-                <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="botao amarelo"/>
-            </div>
-
+        <div class="buscar">
+            <asp:TextBox ID="txtTopico" runat="server" class="input"></asp:TextBox>
+            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="botao amarelo"/>
         </div>
 
-        <p class="tituloUm">Topicos</p>
+        <p class="tituloUm">Tópicos</p>
+    </div>
 
-        <div class="catalogoGrid">
+    <div class="catalogoGrid">
         <asp:Repeater ID="rptTopico" runat="server">
-
             <ItemTemplate>
-                <div class="card amarelo">
+                <div class="card amareloClaro">
                     <asp:HyperLink ID="lnkTopico" runat="server">
                         <asp:Label ID="lblNome" runat="server" class="cardNome"></asp:Label>
-                    </asp:HyperLink>             
+                    </asp:HyperLink>
                 </div>
             </ItemTemplate>
-
         </asp:Repeater>
-        </div>
+    </div>
 
-        <asp:Label ID="lblSemResultado" runat="server" Visible="false" Text="Nenhum tópico encontrado :("></asp:Label>
+    <asp:Label ID="lblSemResultado" runat="server" Visible="false" Text="Nenhum tópico encontrado :(" class="mensagem"></asp:Label>
 
+</div>
 </asp:Content>
 

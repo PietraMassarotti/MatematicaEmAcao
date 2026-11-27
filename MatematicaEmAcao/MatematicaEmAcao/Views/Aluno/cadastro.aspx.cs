@@ -17,51 +17,16 @@ public partial class Views_Aluno_cadastro : System.Web.UI.Page
 
     protected void btnCadastro_Click(object sender, EventArgs e)
     {
-        string strConexao = ConfigurationManager
-            .ConnectionStrings["ConnectionString"].ConnectionString;
+        string strConexao = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
-        int contaErro = 0;
         string msgErro = "";
 
         lblMsg.Visible = false;
 
-        if (txtNome.Text.Trim() == "")
+       
+        if (txtNome.Text.Trim() == "" || txtEmail.Text.Trim() == "" || txtSenha.Text == "")
         {
-            contaErro++;
-            msgErro += "Campo 'Nome' deve ser preenchido!<br>";
-        }
-
-        if (txtEmail.Text.Trim() == "")
-        {
-            contaErro++;
-            msgErro += "Campo 'E-mail' deve ser preenchido!<br>";
-        }
-
-        if (txtSenha.Text == "")
-        {
-            contaErro++;
-            msgErro += "Campo 'Senha' deve ser preenchido!<br>";
-        }
-
-        if (txtNome.Text.Length > 150)
-        {
-            contaErro++;
-            msgErro += "Campo 'Nome' deve ter no máximo 150 caracteres!<br>";
-        }
-
-        if (txtEmail.Text.Length > 150)
-        {
-            contaErro++;
-            msgErro += "Campo 'E-mail' deve ter no máximo 150 caracteres!<br>";
-        }
-
-        if (txtSenha.Text.Length > 30)
-        {
-            contaErro++;
-            msgErro += "Campo 'Senha' deve ter no máximo 30 caracteres!<br>";
-        }
-        if (contaErro > 0)
-        {
+            msgErro += "Por favor preencha todos os campos!";
             lblMsg.Text = msgErro;
             lblMsg.ForeColor = Color.IndianRed;
             lblMsg.Visible = true;
@@ -74,20 +39,14 @@ public partial class Views_Aluno_cadastro : System.Web.UI.Page
                 {
                     conn.Open();
 
-                    SqlCommand cmdVerifica = new SqlCommand(
-                        "SELECT COUNT(*) FROM tbl_usuarios WHERE email = @email",
-                        conn);
+                    SqlCommand cmdVerifica = new SqlCommand("SELECT COUNT(*) FROM tbl_usuarios WHERE email = @email",conn);
+                    cmdVerifica.Parameters.AddWithValue("@email",txtEmail.Text.Trim());
 
-                    cmdVerifica.Parameters.AddWithValue(
-                        "@email",
-                        txtEmail.Text.Trim());
-
-                    int emailExiste = Convert.ToInt32(
-                        cmdVerifica.ExecuteScalar());
+                    int emailExiste = Convert.ToInt32(cmdVerifica.ExecuteScalar());
 
                     if (emailExiste > 0)
                     {
-                        lblMsg.Text = "Este e-mail já está cadastrado!";
+                        lblMsg.Text = "Erro: Este e-mail já está cadastrado.";
                         lblMsg.ForeColor = Color.IndianRed;
                         lblMsg.Visible = true;
                         return;
@@ -96,10 +55,7 @@ public partial class Views_Aluno_cadastro : System.Web.UI.Page
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = conn;
 
-                    cmd.CommandText = "INSERT INTO tbl_usuarios " +
-                        "(nome, email, senha, tipo_usuario) VALUES " +
-                        "(@nome, @email, @senha, 'A')";
-
+                    cmd.CommandText = "INSERT INTO tbl_usuarios (nome, email, senha, tipo_usuario) VALUES (@nome, @email, @senha, 'A')";
                     cmd.Parameters.AddWithValue("@nome", txtNome.Text);
                     cmd.Parameters.AddWithValue("@email", txtEmail.Text);
                     cmd.Parameters.AddWithValue("@senha", txtSenha.Text);

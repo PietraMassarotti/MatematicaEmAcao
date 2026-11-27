@@ -3,59 +3,74 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<div class="pagina fundoCinza">
 
-    <h1>Meu Progresso</h1>
+    <div class="center">
+        <p class="tituloUm">Meu Progresso</p>
+    </div>
 
-    <asp:Label ID="lblMsg" runat="server" Visible="False"></asp:Label>
+    <asp:Label ID="lblMsg" runat="server" Visible="False" class="mensagem"></asp:Label>
 
-        <p>Streak Atual:</p>
-        <asp:Label ID="lblStreakAtual" runat="server"></asp:Label>
+    <div class="gradeInfo quatroColunas">
+        <div class="painel">
+            <p class="painelTitulo">Streak atual</p>
+            <asp:Label ID="lblStreakAtual" runat="server" class="painelValor"></asp:Label>
+        </div>
 
-    <br />
+        <div class="painel painelDestaque">
+            <p class="painelTitulo">Streak Máximo</p>
+            <asp:Label ID="lblStreakMax" runat="server" class="painelValor"></asp:Label>
+        </div>
 
-    <p>Streak Máximo:</p>
-        <asp:Label ID="lblStreakMax" runat="server"></asp:Label>
+        <div class="painel">
+            <p class="painelTitulo">Nível atual</p>
+            <asp:Label ID="lblNivel" runat="server" class="painelValor"></asp:Label>
+        </div>
 
-    <br />
+        <div class="painel">
+            <p class="painelTitulo">XP Total</p>
+            <asp:Label ID="lblXpTotal" runat="server" class="painelValor"></asp:Label>
+        </div>
+    </div>
 
-    <p>Nível Atual:</p>
-        <asp:Label ID="lblNivel" runat="server"></asp:Label>
+    <div class="gradeInfo duasColunas">
+        <div class="painel">
+            <p class="painelTitulo">Total de Conquistas</p>
+            <asp:Label ID="lblTotalConquistas" runat="server" class="painelValor"></asp:Label>
+        </div>
 
-    <br />
+        <div class="painel">
+            <p class="painelTitulo">Total de Atividades Realizadas</p>
+            <asp:Label ID="lblTotalAtividadesFeitas" runat="server" class="painelValor"></asp:Label>
+        </div>
+    </div>
 
-    <p>Xp Total:</p>
-        <asp:Label ID="lblXpTotal" runat="server"></asp:Label>
+    <div class="gradeInfo duasColunas">
+        <div class="painel">
+            <p class="painelTitulo">Exercícios Realizados Por Tópico</p>
+            <asp:Repeater ID="rptTopicos" runat="server">
+                <ItemTemplate>
+                    <div class="linhaLista">
+                        <asp:Label ID="lblTopico" runat="server"></asp:Label>:
+                        <asp:Label ID="lblQtdTopico" runat="server"></asp:Label>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
 
-    <br />
+        <div class="painel">
+            <p class="painelTitulo">Exercícios Realizados Por Dificuldade</p>
+            <asp:Repeater ID="rptDificuldades" runat="server">
+                <ItemTemplate>
+                    <div class="linhaLista">
+                        <asp:Label ID="lblDificuldade" runat="server"></asp:Label>:
+                        <asp:Label ID="lblQtdDificuldade" runat="server"></asp:Label>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
+    </div>
 
-    <p>Número Total de Conquistas:</p>
-        <asp:Label ID="lblTotalConquistas" runat="server"></asp:Label>
-
-    <br />
-
-    <p>Número Total de atividades realizadas:</p>
-        <asp:Label ID="lblTotalAtividadesFeitas" runat="server"></asp:Label>
-    <br />
-
-    <h3>Número de exercícios realizados por tópico</h3>
-    <asp:Repeater ID="rptTopicos" runat="server">
-        <ItemTemplate>
-            <div>
-                <asp:Label ID="lblTopico" runat="server"></asp:Label>
-                <asp:Label ID="lblQtdTopico" runat="server"></asp:Label>
-            </div>
-        </ItemTemplate>
-    </asp:Repeater>
-
-    <h3>Número de exercícios realizados por dificuldade</h3>
-
-    <asp:Repeater ID="rptDificuldades" runat="server">
-        <ItemTemplate>
-            <div>
-                <asp:Label ID="lblDificuldade" runat="server"></asp:Label>
-                <asp:Label ID="lblQtdDificuldade" runat="server"></asp:Label>
-            </div>
-        </ItemTemplate>
-    </asp:Repeater>
+</div>
 
 </asp:Content>

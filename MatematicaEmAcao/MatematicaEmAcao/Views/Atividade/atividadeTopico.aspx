@@ -3,64 +3,61 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div class="pagina fundoCinza">
 
-     <asp:Button ID="btnVoltar" runat="server" Text="Voltar" OnClick="btnVoltar_Click" class="botao azulEscuro"/>
+    <div class="topoPagina">
+        <asp:Button ID="btnVoltar" runat="server" Text="Voltar" OnClick="btnVoltar_Click" class="botao botaoVoltar azulEscuro"/>
 
-    <br />
-    <br />
+        <div class="center">
+            <asp:Label ID="lblNomeTopico" runat="server" Text="Label" class="tituloUm"></asp:Label>
 
-    <asp:Label ID="lblNomeTopico" runat="server" Text="Label" class="tituloUm"></asp:Label>
+            <p class="tituloDois">Não encontrou a atividade? Pesquise aqui.</p>
 
-    <br />
-    <br />
-
-    <p class="tituloDois">Buscar uma atividade dentro do tópico</p>
-    <br />
-
-    <div class="buscar">
-        <asp:TextBox ID="txtAtividade" runat="server" class="input"></asp:TextBox>
-        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="botao amarelo"/>
+            <div class="buscar">
+                <asp:TextBox ID="txtAtividade" runat="server" class="input"></asp:TextBox>
+                <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="botao amarelo"/>
+            </div>
+        </div>
     </div>
-
-    <br />
-    <br />
 
     <asp:Repeater ID="rptAtividadeTopico" runat="server">
 
-    <HeaderTemplate>
-        <table class="tabela">
-            <thead>
-                <tr class="azulEscuro">
-                    <th>Código</th>
-                    <th >Título</th>
-                    <th>Tipo</th>
-                    <th>Dificuldade</th>
-                </tr>
-            </thead>
-            <tbody>
-    </HeaderTemplate>
+        <HeaderTemplate>
+            <table class="tabela">
+                <thead>
+                    <tr class="azul">
+                        <th>Código</th>
+                        <th>Título</th>
+                        <th>Tipo</th>
+                        <th>Dificuldade</th>
+                    </tr>
+                </thead>
+                <tbody>
+        </HeaderTemplate>
 
-    <ItemTemplate>
-        <tr>
-            <td><asp:Label ID="lblCod" runat="server"></asp:Label></td>
-            <td>
-                <asp:HyperLink ID="lnkAtividade" runat="server">
-                    <asp:Label ID="lblTitulo" runat="server"></asp:Label>
-                </asp:HyperLink>
-            </td>
-            <td><asp:Label ID="lblTipo" runat="server"></asp:Label></td>
-            <td><asp:Label ID="lblDificuldade" runat="server"></asp:Label></td>
-        </tr>
-    </ItemTemplate>
+        <ItemTemplate>
+            <tr>
+                <td><asp:Label ID="lblCod" runat="server"></asp:Label></td>
+                <td>
+                    <asp:HyperLink ID="lnkAtividade" runat="server">
+                        <asp:Label ID="lblTitulo" runat="server"></asp:Label>
+                    </asp:HyperLink>
+                </td>
+                <td><asp:Label ID="lblTipo" runat="server"></asp:Label></td>
+                <td><asp:Label ID="lblDificuldade" runat="server"></asp:Label></td>
+            </tr>
+        </ItemTemplate>
 
-    <FooterTemplate>
-            </tbody>
-        </table>
-    </FooterTemplate>
+        <FooterTemplate>
+                </tbody>
+            </table>
+        </FooterTemplate>
 
-</asp:Repeater>
+    </asp:Repeater>
 
-    <asp:Label ID="lblSemResultado" runat="server" Text="Nenhuma atividade encontrada :(" Visible ="false"></asp:Label>
+    <asp:Label ID="lblSemResultado" runat="server" Text="Nenhuma atividade encontrada :(" Visible="false" class="mensagem"></asp:Label>
+
+</div>
 
 </asp:Content>
 
